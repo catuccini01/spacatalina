@@ -23,27 +23,45 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html">
-                    <i class="fa-duotone fa-spa"> </i>
-                    <span>Spa Catalina</span>
-                </a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html">
+                        <i class="fa-duotone fa-spa"> </i>
+                        <span>Spa Catalina</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menuHover gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html"> Servicios</a>
+                        </li>
+                        <li class="nav-item activeMenu">
+                            <a class="nav-link" href="./precios.html"> Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html"> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menuHover">
-                <li> <a href="../index.html"> Inicio</a></li>
-                <li> <a href="./servicios.html"> Servicios</a></li>
-                <li class="menuHover"> <a href="./precios.html"> Precios</a></li>
-                <li> <a href="./contacto.html"> Contacto</a></li>
-            </ul>
-            
         </nav>
+
     </header>
     <main>
-        <section id="precios">
+        <section id="precios" class="container mb-md-5">
             <h1>Precios y Horarios</h1>
-            <div class="div-precios">
-                <div class="precios-horario">
+            <div class="div-precios row">
+                <div class="precios-horario col-lg-4">
                     <h4>Horarios</h4>
                     <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
                         vino
@@ -57,15 +75,15 @@
                     <p>Viernes y Sábado</p>
 
                     <div class="btn-precio">
-                        <a type="button" href="">Reservar</a>
+                        <a class="btnHover" type="button" href="">Reservar</a>
                     </div>
                 </div>
 
-                <div class="precio-imagen">
+                <div class="precio-imagen col-lg-4 p-0">
                     <img src="../img/precios-horarios.jpg" alt="mujer maquillándose frente a un espejo">
                 </div>
 
-                <div class="precios-precios">
+                <div class="precios-precios col-lg-4">
                     <h4>Precios</h4>
                     <div class="precios-servicios">
                         <div>
@@ -115,55 +133,66 @@
 
 
     <footer>
-        <div class="footer-section">
-            <div>
-                <div class="logo">
-                    <a href="../index.html">
-                        <i class="fa-duotone fa-spa"> </i>
-                        <span>Spa Catalina</span>
+        <div class="footer-section container">
+            <div class="row gap-2 justify-content-between">
+                <div class="col-md-5 col-sm-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <i class="fa-duotone fa-spa"> </i>
+                            <span>Spa Catalina</span>
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
+                        vino
+                        pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <hr>
+
+            <div class="footer-2 d-flex justify-content-between">
+                <p class="col-lg-6">2023 Todos los derechos reservados</p>
+    
+                <div class="redes-sociales col-lg-6 d-flex justify-content-end gap-3">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        Instagram
                     </a>
                 </div>
-                <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con vino
-                    pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
             </div>
-
-            <div>
-                <h4>Contacto</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Servicios</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
+           
         </div>
-        <hr>
-        <div class="footer-2">
-            <p>2023 Todos los derechos reservados</p>
-
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    Facebook
-                </a>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-twitter"></i>
-                    Twitter
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    Instagram
-                </a>
-            </div>
-        </div>
+      
+       
     </footer>
 
     <!-- FONT AWESOME -->

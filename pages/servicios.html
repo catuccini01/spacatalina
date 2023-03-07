@@ -23,28 +23,48 @@
 
 <body>
     <header>
-        <nav>
+      
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
             <div class="logo">
                 <a href="../index.html">
                     <i class="fa-duotone fa-spa"> </i>
                     <span>Spa Catalina</span>
                 </a>
             </div>
-            <ul class="menuHover">
-                <li> <a href="../index.html">Inicio</a></li>
-                <li class="activeMenu"> <a href="./servicios.html"> Servicios</a></li>
-                <li> <a href="./precios.html"> Precios</a></li>
-                <li> <a href="./contacto.html"> Contacto</a></li>
-            </ul>
-        </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menuHover gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html"> Inicio</a>
+                    </li>
+                    <li class="nav-item activeMenu">
+                        <a class="nav-link" href="./servicios.html"> Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./precios.html"> Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html"> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      
     </header>
     <main>
-        <section id="servicios">
+        <section id="servicios" class="container">
             <h1>Nuestros Servicios</h1>
 
-            <div class="cards-servicios">
+            <div class="row gap-5 justify-content-center">
 
-                <div class="card">
+                <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -79,7 +99,7 @@
                   </div>
           
 
-                  <div class="card">
+                  <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -113,7 +133,7 @@
                     </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -147,7 +167,7 @@
                     </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -181,7 +201,7 @@
                     </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -215,7 +235,7 @@
                     </div>
                   </div>
 
-                  <div class="card">
+                  <div class="card col-lg-3 p-0">
                     <img src="../img/skin-care.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -259,56 +279,67 @@
 
 
     <footer>
-        <div class="footer-section">
-            <div>
-                <div class="logo">
-                    <a href="../index.html">
-                        <i class="fa-light fa-spa"> </i>
-                        <span>Spa Catalina</span>
-                    </a>
-                </div>
-                <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con vino
-                    pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
-            </div>
+      <div class="footer-section container">
+          <div class="row gap-2 justify-content-between">
+              <div class="col-md-5 col-sm-12">
+                  <div class="logo">
+                      <a href="./index.html">
+                          <i class="fa-duotone fa-spa"> </i>
+                          <span>Spa Catalina</span>
+                      </a>
+                  </div>
+                  <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
+                      vino
+                      pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
+              </div>
 
-            <div>
-                <h4>Contacto</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
+              <div class="col-md-3 col-sm-12">
+                  <h4>Contacto</h4>
+                  <ul>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                  </ul>
+              </div>
 
-            <div>
-                <h4>Servicios</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
-        </div>
-        <hr>
-        <div class="footer-2">
-            <p>2023 Todos los derechos reservados</p>
+              <div class="col-md-3 col-sm-12">
+                  <h4>Servicios</h4>
+                  <ul>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                      <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                  </ul>
+              </div>
 
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    Facebook
-                </a>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-twitter"></i>
-                    Twitter
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    Instagram
-                </a>
-            </div>
-        </div>
-    </footer>
+          </div>
+
+
+
+          <hr>
+
+          <div class="footer-2 d-flex justify-content-between">
+              <p class="col-lg-6">2023 Todos los derechos reservados</p>
+  
+              <div class="redes-sociales col-lg-6 d-flex justify-content-end gap-3">
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                      <i class="fa-brands fa-square-facebook"></i>
+                      Facebook
+                  </a>
+                  <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                      <i class="fa-brands fa-square-twitter"></i>
+                      Twitter
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                      <i class="fa-brands fa-square-instagram"></i>
+                      Instagram
+                  </a>
+              </div>
+          </div>
+         
+      </div>
+    
+     
+  </footer>
 
 
     <!-- FONT AWESOME -->

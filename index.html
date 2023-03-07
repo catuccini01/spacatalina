@@ -24,20 +24,40 @@
 
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="./index.html">
-                    <i class="fa-duotone fa-spa"> </i>
-                    <span>Spa Catalina</span>
-                </a>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <div class="logo">
+                    <a href="./index.html">
+                        <i class="fa-duotone fa-spa"> </i>
+                        <span>Spa Catalina</span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menuHover gap-3">
+                        <li class="nav-item activeMenu">
+                            <a class="nav-link" href="./index.html"> Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/servicios.html"> Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/precios.html"> Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html"> Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="menuHover">
-                <li class="activeMenu"> <a href="./index.html"> Inicio</a></li>
-                <li> <a href="./pages/servicios.html"> Servicios</a></li>
-                <li> <a href="./pages/precios.html"> Precios</a></li>
-                <li> <a href="./pages/contacto.html"> Contacto</a></li>
-            </ul>
         </nav>
+
     </header>
     <main>
         <section id="inicio">
@@ -51,49 +71,75 @@
 
 
 
-            <div class="cards-home">
-                <figure class="card">
-                    <i class="fa-light fa-hand-holding-hand"></i>
-                    <figcaption>
-                        <h3>Masaje Terapia</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </figcaption>
-                </figure>
+            <div class="container row justify-content-center cards-home mt-4 mx-auto">
 
-                <figure class="card">
-                    <i class="fa-regular fa-face-smile-hearts"></i>
-                    <figcaption>
-                        <h3>Skin Care</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </figcaption>
-                </figure>
 
-                <figure class="card">
-                    <i class="fa-regular fa-person-dots-from-line"></i>
-                    <figcaption>
-                        <h3>Tratamientos Corporales</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </figcaption>
-                </figure>
+                <div class="card col-lg-3">
+                    <div class="card-body">
+                        <i class="fa-light fa-hand-holding-hand"></i>
+                        <h5 class="card-title">
+                            Masaje Terapia
+                        </h5>
 
-                <figure class="card">
-                    <i class="fa-regular fa-candle-holder"></i>
-                    <figcaption>
-                        <h3>Aromaterapia</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </figcaption>
-                </figure>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3">
+                    <div class="card-body">
+                        <i class="fa-regular fa-face-smile-hearts"></i>
+                        <h5 class="card-title">
+                            Skin Care
+                        </h5>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3">
+                    <div class="card-body">
+                        <i class="fa-regular fa-person-dots-from-line"></i>
+                        <h5 class="card-title">
+                            Tratamientos Corporales
+                        </h5>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3">
+                    <div class="card-body">
+                        <i class="fa-regular fa-candle-holder"></i>
+                        <h5 class="card-title">
+                            Aromaterapia
+                        </h5>
+
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section id="beneficios">
+        <section id="beneficios" class="container mb-lg-5">
             <h2>Beneficios Tratamientos</h2>
 
-            <div class="grillas">
-                <div class="grilla-1">
+            <div class="row">
+                <div class="col-lg-6 p-0">
                     <img src="./img/beneficios-1.jpg" alt="persona a quién se le está realizando masaje">
                 </div>
-                <div class="grilla-2">
+                <div class="col-lg-6 textoBeneficios-1">
                     <h3>Why do we use it?</h3>
                     <ul>
                         <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
@@ -102,22 +148,22 @@
                     </ul>
                 </div>
 
-                <div class="grilla-3">
+                <div class="col-lg-3 p-0">
                     <img src="./img/beneficios-2.jpg" alt="imagen decorativa de productos relajantes">
                 </div>
 
-                <div class="grilla-4">
+                <div class="col-lg-3 textoBeneficios-2">
                     <h4>Why do we use it?</h4>
                     <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
                         vino pichanga coscacho ni ahí peinar la muñeca chuchada al chancho</p>
                 </div>
 
-                <div class="grilla-5">
+                <div class="col-lg-3 p-0">
                     <img src="./img/beneficios-3.jpg"
                         alt="persona con piedras en su espalda como parte de un tratamiento corporal">
                 </div>
 
-                <div class="grilla-6">
+                <div class="col-lg-3  textoBeneficios-3">
                     <h4>Why do we use it?</h4>
                     <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
                         vino pichanga coscacho ni ahí peinar la muñeca chuchada al chancho</p>
@@ -129,55 +175,66 @@
 
 
     <footer>
-        <div class="footer-section">
-            <div>
-                <div class="logo">
-                    <a href="./index.html">
-                        <i class="fa-duotone fa-spa"> </i>
-                        <span>Spa Catalina</span>
+        <div class="footer-section container">
+            <div class="row gap-2 justify-content-between">
+                <div class="col-md-5 col-sm-12">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <i class="fa-duotone fa-spa"> </i>
+                            <span>Spa Catalina</span>
+                        </a>
+                    </div>
+                    <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con
+                        vino
+                        pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-sm-12">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                        <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <hr>
+
+            <div class="footer-2 d-flex justify-content-between">
+                <p class="col-lg-6">2023 Todos los derechos reservados</p>
+    
+                <div class="redes-sociales col-lg-6 d-flex justify-content-end gap-3">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-twitter"></i>
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        Instagram
                     </a>
                 </div>
-                <p>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor po cahuín, luca melón con vino
-                    pichanga coscacho ni ahí peinar la muñeca chuchada al chancho achoclonar.</p>
             </div>
-
-            <div>
-                <h4>Contacto</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Servicios</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                    <li>Lorem ipsum dolor sit cuchuflí barquillo bacán jote gamba listeilor</li>
-                </ul>
-            </div>
+           
         </div>
-        <hr>
-        <div class="footer-2">
-            <p>2023 Todos los derechos reservados</p>
-
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    Facebook
-                </a>
-                <a href="https://www.twitter.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-twitter"></i>
-                    Twitter
-                </a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-square-instagram"></i>
-                    Instagram
-                </a>
-            </div>
-        </div>
+      
+       
     </footer>
 
     <!-- FONT AWESOME -->
