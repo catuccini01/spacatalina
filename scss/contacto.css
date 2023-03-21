@@ -60,25 +60,25 @@
 #contacto article div.row .detalles-contacto .img-contacto img {
   max-height: 230px;
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-body {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-body {
   font-size: 14px;
   color: #727475;
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-body a {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-body a {
   color: #e8816c;
   font-weight: 600;
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-button:not(.collapsed) {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-button:not(.collapsed) {
   background-color: #F0E6E0;
   color: #e8816c;
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-button:not(.collapsed)::after {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-button:not(.collapsed)::after {
   transform: rotateX(180deg);
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-button:focus {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-button:focus {
   box-shadow: none;
 }
-#contacto article div.row .detalles-contacto .img-contacto .accordion .accordion-item .accordion-button::after {
+#contacto article div.row .detalles-contacto .accordion .accordion-item .accordion-button::after {
   font-family: "Font Awesome 5 Pro";
   content: "\f078";
   background-image: none;

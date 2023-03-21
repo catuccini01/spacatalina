@@ -82,37 +82,39 @@
                         max-height: 230px;
                     }
 
-                    .accordion {
-                        .accordion-item {
-                            .accordion-body {
-                                font-size: 14px;
-                                color: $color_4;
+                  
+                }
 
-                                a {
-                                    color: $color_3;
-                                    font-weight: 600;
+                .accordion {
+                    .accordion-item {
+                        .accordion-body {
+                            font-size: 14px;
+                            color: $color_4;
+
+                            a {
+                                color: $color_3;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .accordion-button {
+                            &:not(.collapsed) {
+                                background-color: $background-color_2;
+                                color: $color_3;
+
+                                &::after {
+                                    transform: rotateX(180deg);
                                 }
                             }
 
-                            .accordion-button {
-                                &:not(.collapsed) {
-                                    background-color: $background-color_2;
-                                    color: $color_3;
+                            &:focus {
+                                box-shadow: none;
+                            }
 
-                                    &::after {
-                                        transform: rotateX(180deg);
-                                    }
-                                }
-
-                                &:focus {
-                                    box-shadow: none;
-                                }
-
-                                &::after {
-                                    font-family: "Font Awesome 5 Pro";
-                                    content: "\f078";
-                                    background-image: none;
-                                }
+                            &::after {
+                                font-family: "Font Awesome 5 Pro";
+                                content: "\f078";
+                                background-image: none;
                             }
                         }
                     }
