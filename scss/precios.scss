@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixin';
+
+#precios {
+
+    h1 {
+        @include titulos ($color_1)
+    }
+
+    h2 {
+        @include titulosSecundarios
+    }
+
+    .div-precios {
+        .precios-horario {
+            background-color: $background-color_1;
+            color: $color_7;
+            padding: 30px;
+
+            h4 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            h5 {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .btn-precio {
+                a {
+                    @include botones ($border-white)
+                }
+        
+                margin: 66px 0;
+            }
+        }
+    }
+
+
+
+    .precios-precios {
+        background-color: $background-color_4;
+        padding: 30px;
+        height: 100%;
+        .precios-servicios {
+            width: 100% !important;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+    
+            div {
+                width: 100% !important;
+                padding-block: 20px;
+                h5 {
+                    margin: 0;
+                }
+            }
+    
+        }
+    }
+
+    
+
+  
+}

@@ -1,0 +1,63 @@
+footer {
+    background-color: $background-color_1;
+    padding-block: 20px;
+    color: $color_7;
+
+    .logo {
+        margin-block: 20px;
+
+        a {
+            text-decoration: none;
+            color: $color_7;
+        }
+    }
+
+    hr {
+        border: 1px solid #EFA69740;
+    }
+
+    .footer-section {
+        font-size: 14px;
+
+        ul {
+            padding: 0;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .contenedor-redes {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            max-width: 480px;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            height: 2px;
+            background-color: $background-color_6;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            max-width: 480px;
+            width: 100%;
+            right: 0;
+            top: 50%;
+            height: 2px;
+            background-color: $background-color_6;
+        }
+
+        .redes-sociales {
+            a {
+                text-decoration: none;
+                color: $color_7;
+            }
+        }
+    }
+}

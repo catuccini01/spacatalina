@@ -1,0 +1,85 @@
+@import 'variables';
+@import 'mixin';
+
+#servicios {
+    text-align: center;
+
+    h1 {
+        @include titulos ($color_1)
+    }
+
+    h2 {
+        @include titulosSecundarios
+    }
+
+    h5 {
+        font-weight: 600;
+    }
+
+
+    .card {
+        .card-body {
+            .card-text {
+                font-size: 12px;
+            }
+
+
+            .estrellas {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 10px;
+                justify-content: center;
+                margin-block: 30px;
+
+               
+                button {
+                    color: $color_5;
+                    transition: .3s ease-in-out;
+                    border: 0;
+                    background-color: initial;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $color_6;
+                    }
+
+                    &:nth-child(1) {
+                        &:hover~button {
+                            color: $color_6;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:hover~button {
+                            color: $color_6;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        &:hover~button {
+                            color: $color_6;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        &:hover~button {
+                            color: $color_6;
+                        }
+                    }
+
+                    &:nth-child(5) {
+                        &:hover~button {
+                            color: $color_6;
+                        }
+                    }
+                }
+            }
+
+            .btnHover {
+                @include botones (none)
+            }
+
+        }
+
+    }
+}

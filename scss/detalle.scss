@@ -1,0 +1,83 @@
+@import 'variables';
+@import 'mixin';
+
+#detalle {
+    .fondo-detalle {
+        background-image: url(../img/fondo-detalle.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            @include titulos ($color_7)
+        }
+
+        .btn-detalle {
+            a {
+                @include botones (none)
+            }
+        }
+    }
+
+
+
+
+    .descripcion-detalle {
+        margin-block: 20px;
+
+        .descripcion-img {
+            img {
+                width: 290px;
+            }
+
+            .img-detalle-2 {
+                transform: translateY(20px);
+                margin-left: 10px;
+            }
+        }
+
+        .descripcion-text {
+            padding: 60px;
+
+            img {
+                width: 290px;
+            }
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+
+
+}
+
+#beneficios-detalle {
+    margin-top: 50px;
+    font-size: 18px;
+    color: $color_4;
+    background-color: $background-color_4;
+
+    h2 {
+
+        @include titulosSecundarios
+    }
+
+    .row {
+
+        .textBackground {
+            background-color: $background-color_2;
+            color: $color_4;
+            padding: 50px;
+        }
+    }
+}

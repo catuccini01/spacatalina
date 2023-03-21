@@ -1,0 +1,212 @@
+@import 'variables';
+@import 'mixin';
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&::selection {
+		background-color: $background-color_1;
+	}
+}
+
+body {
+	font-family: $font-family_1;
+	color: $color_1;
+
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	.logo {
+		font-size: 25px;
+
+		a {
+			text-decoration: none;
+			color: $color_2;
+			transition: .3s ease-in-out;
+
+			&:hover {
+				color: $color_3;
+				transition: .3s ease-in-out;
+			}
+		}
+	}
+
+	header {
+		position: fixed;
+		z-index: 101;
+		width: 100%;
+		box-shadow: 1px 1px 5px #00000033;
+
+		nav {
+			ul.menuHover {
+				li {
+					a {
+						text-decoration: none;
+						color: $color_4;
+						position: relative;
+
+						&:hover {
+							color: $color_2;
+						}
+					}
+
+					a {
+						&::after {
+							content: "";
+							display: block;
+							margin: auto;
+							height: 3px;
+							width: 0;
+							top: 5px;
+							background: transparent;
+							transition: all 0.5s;
+						}
+					}
+				}
+			}
+		}
+
+		ul.menuHover {
+			li {
+				>a {
+					&:hover {
+						&::after {
+							width: 100%;
+							background: $background-color_1;
+						}
+					}
+				}
+			}
+		}
+
+		li {
+			>a.active-nav {
+				&::after {
+					width: 100%;
+					background: $background-color_1;
+				}
+			}
+		}
+	}
+
+	.activeMenu {
+		a {
+			color: $color_2 !important;
+
+			&::after {
+				top: 5px;
+				background: transparent;
+				transition: all 0.5s;
+				width: 100% !important;
+				background: $background-color_1 !important;
+			}
+		}
+	}
+
+	#inicio {
+		h1 {
+			@include titulos ($color_7);
+			position: absolute;
+			z-index: 100;
+			width: 100%;
+			top: 150px;
+		}
+
+		video {
+			position: relative;
+			width: 100%;
+			object-fit: cover;
+			filter: brightness(0.5);
+		}
+	}
+
+	.cards-home {
+		text-align: center;
+		margin-top: 30px;
+
+		.card {
+			border: none;
+
+			.card-body {
+				.card-title {
+					font-weight: 700;
+				}
+
+				.card-text {
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+
+		i {
+			font-size: 60px;
+			color: $color_2;
+			padding-block: 20px;
+		}
+	}
+
+	#beneficios {
+		font-size: 18px;
+		color: $color_4;
+
+		h2 {
+			@include titulosSecundarios
+		}
+		.textoBeneficios-1 {
+			padding: 50px !important;
+			background-color: $background-color_2;
+			color: $color_4;
+	
+			h3 {
+				font-weight: 600;
+			}
+	
+			ul {
+				li {
+					padding-top: 30px;
+				}
+			}
+		}
+	
+		.textoBeneficios-2 {
+			background-color: $background-color_1;
+			padding: 30px !important;
+	
+			ul {
+				li {
+					padding: 20px 0;
+					color: $color_7;
+				}
+			}
+		}
+	
+		.textoBeneficios-3 {
+			background-color: $background-color_3;
+			padding: 30px !important;
+	
+			ul {
+				li {
+					padding: 20px 0;
+					color: $color_1;
+				}
+			}
+		}
+	
+	}
+
+
+
+
+
+
+
+
+
+}
