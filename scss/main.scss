@@ -1,8 +1,8 @@
 
-@import 'index';
-@import 'servicios';
-@import 'precios';
-@import 'detalle';
-@import 'contacto';
-@import 'footer';
-@import 'media-queries';
+@import './partials/';
+@import './partials/servicios';
+@import './partials/precios';
+@import './partials/detalle';
+@import './partials/contacto';
+@import './partials/footer';
+@import './partials/media-queries';
