@@ -21,6 +21,7 @@
 
     article {
         .titulo-form-contacto {
+            border-bottom: 1px solid $color_5;
             text-align: center;
             margin-bottom: 30px;
 
@@ -77,6 +78,9 @@
             }
 
             .detalles-contacto {
+                h4{
+                    font-weight: 600;
+                }
                 .img-contacto {
                     img {
                         max-height: 230px;

@@ -240,6 +240,63 @@ body #beneficios .textoBeneficios-3 ul li {
   transform: scaleX(1);
 }
 
+.promociones {
+  background-image: url(../../img/promociones.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #212529;
+  padding-block: 50px;
+}
+.promociones h4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.promociones p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-block: 20px;
+}
+.promociones .btnHover {
+  border: none;
+  background-color: #EFA697;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 12px 25px;
+}
+.promociones .btnHover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #bd5d4a;
+  border-radius: 6px;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.promociones .btnHover:hover, .promociones .btnHover:focus, .promociones .btnHover:active {
+  color: white;
+  border-radius: 6px;
+}
+.promociones .btnHover:hover::before, .promociones .btnHover:focus::before, .promociones .btnHover:active::before {
+  transform: scaleX(1);
+}
+
 #precios h1 {
   color: #212529;
   text-align: center;
@@ -324,6 +381,63 @@ body #beneficios .textoBeneficios-3 ul li {
 }
 #precios .precios-precios .precios-servicios div h5 {
   margin: 0;
+}
+
+.promociones {
+  background-image: url(../../img/promociones.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #212529;
+  padding-block: 50px;
+}
+.promociones h4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.promociones p {
+  font-size: 18px;
+  font-weight: 500;
+  padding-block: 20px;
+}
+.promociones .btnHover {
+  border: none;
+  background-color: #EFA697;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 12px 25px;
+}
+.promociones .btnHover::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #bd5d4a;
+  border-radius: 6px;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.promociones .btnHover:hover, .promociones .btnHover:focus, .promociones .btnHover:active {
+  color: white;
+  border-radius: 6px;
+}
+.promociones .btnHover:hover::before, .promociones .btnHover:focus::before, .promociones .btnHover:active::before {
+  transform: scaleX(1);
 }
 
 #detalle .fondo-detalle {
@@ -440,6 +554,7 @@ body #beneficios .textoBeneficios-3 ul li {
   font-size: 46px;
 }
 #contacto article .titulo-form-contacto {
+  border-bottom: 1px solid #c5c5c5;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -479,6 +594,9 @@ body #beneficios .textoBeneficios-3 ul li {
   border: none;
   color: #ffffff;
   padding: 10px 0;
+}
+#contacto article div.row .detalles-contacto h4 {
+  font-weight: 600;
 }
 #contacto article div.row .detalles-contacto .img-contacto img {
   max-height: 230px;
